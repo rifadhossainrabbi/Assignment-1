@@ -178,6 +178,30 @@ span {
 
 .notes_card {
   width: 100%;
+  height: 504px;
+  /* background-color: aqua; */
+  position: relative;
+  overflow: hidden;
+}
+
+.cards{
+ position: absolute;
+ width: 1530px;
+ display: flex;
+ /* justify-content: space-between; */
+ gap: 40px;
+ bottom: 0px;
+ left: 50%;
+ transform: translateX(-46%);
+}
+
+.card {
+  /* border: 1px solid red; */
+  text-align: center;
+  padding:40px 15px;
+  border-bottom: none;
+  box-shadow:0px 0px 7px 0px rgba(0, 0, 0, 0.187);
+  border-radius: 8px 8px 0 0;
 }
 
 .notes_header {
@@ -196,29 +220,8 @@ span {
 .notes_header p {
   color: #627382;
   font-size: 18px;
+  margin-bottom: 10px;
   /* font-weight: 100; */
-}
-
-.cards {
-  display: flex;
-  justify-content: space-around;
-  width: 1450px;
-  margin: 0 auto;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
-.card {
-  /* border: 1px solid red; */
-  text-align: center;
-  padding: 70px 15px;
-  border-bottom: none;
-  box-shadow:
-    3px -3px 30px #627382;
-  /* 0 0 0 #ffffff00,
-  0 -5px 50px #627382,
-   0 5px 30px #001931; */
-   border-radius: 8px 8px 0 0;
 }
 
 .img_box {
@@ -248,4 +251,102 @@ span {
 .card p {
   font-size: 18px;
   color: #627382;
+}
+
+.brain_section {
+  width: 100%;
+  height: 870px;
+  /* border: 1px solid red; */
+  display: flex;
+  /* justify-content: center;
+    align-items: center; */
+  padding: 140px;
+  /* margin-top: -70px; */
+  background-color: #FFFFFF;
+}
+
+.brain {
+  /* border: 1px solid red; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 90px;
+  width: 1450px;
+  /* padding: 8px; */
+}
+
+.left_section_img {
+  display: block;
+}
+
+.left_section_img img {
+  width: 625px;
+  height: 625px;
+}
+
+.right_section h4{
+  color: #30B868;
+  font-size: 18px;
+  font-weight: 300px;
+  margin-bottom: 18px;
+}
+
+.right_section h1{
+  color: #000000ce;
+  font-size: 55px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.right_section p{
+  font-size: 19px;
+  font-weight: 300;
+  color: #627382;
+  margin-bottom: 35px;
+}
+
+.right_section ul li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 16px;
+}
+
+.challenge_section{
+  /* background-color: #F7F6F2; */
+  width: 100%;
+  height: 570px;
+}
+
+.challenge{
+  width: 1450px;
+  height: 432px;
+  background-color: #F7F6F2;
+  margin: 0 auto;
+  padding: 85px 45px;
+  text-align: center;
+}
+
+.challenge h1{
+ font-size: 45px;
+ color: #001931;
+ margin-bottom: 18px;
+ font-weight: bold;
+}
+
+.challenge p{
+  font-size: 18px;
+  color: #627382;
+  margin-bottom: 28px;
+}
+
+.one button{
+  /* margin-bottom: 18px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  margin: 0  auto 18px;
 }
