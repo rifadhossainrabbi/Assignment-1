@@ -1,3 +1,4 @@
+/* Universal Style */
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +24,7 @@ body {
 
 .btn button:hover {
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.482);
+  border: 1px solid rgba(168, 168, 168, 0.482);
   cursor: pointer;
   color: red;
 }
@@ -36,7 +37,8 @@ body {
 
 
 
-/* Heade o Navbar style */
+
+/* Heade and Navbar style */
 header {
   width: 100%;
   padding: 18px 0;
@@ -77,7 +79,7 @@ nav ul li a:hover {
 
 
 /* Hero section style */
-section {
+header section {
   max-width: 100%;
   height: 90%;
   /* max-width: 1800px; */
@@ -91,34 +93,40 @@ section {
   padding: 128px 135px 200px 135px;
 }
 
-.hero_section {
+header section .hero_section {
   /* border: 1px solid red; */
   max-width: 1530px;
   text-align: center;
 }
 
-.top_header button {
+header section .hero_section .top_header button {
   /* border: 1px solid red; */
   /* margin: 0 auto; */
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 25px;
-  padding: 16px 24px;
+  padding: 10px 24px;
   display: inline-block;
   margin-bottom: 24px;
   color: #3dd97e;
   font-size: 18px;
-
 }
 
-.top_header button i {
+header section .hero_section .top_header button:hover {
+  background-color: transparent;
+  border: 1px solid rgba(191, 191, 191, 0.482);
+  cursor: pointer;
+  color: red;
+}
+
+header section .hero_section .top_header button i {
   background-color: #30b86935;
   border: 0;
   border-radius: 50%;
   color: #FFFFFF;
 }
 
-.hero_header {
+.hero_section .hero_header {
   /* border: 1px solid red; */
   color: #ffffff;
   margin-bottom: 30px;
@@ -126,11 +134,13 @@ section {
   margin: 0 auto;
 }
 
-.hero_header h1 {
+header section .hero_section .hero_header h1 {
   display: inline-block;
   font-size: 80px;
   font-weight: 900;
+  line-height: 95px;
   /* text-wrap: wrap; */
+  margin-bottom: 20px;
 }
 
 span {
@@ -138,27 +148,27 @@ span {
   color: #30B868;
 }
 
-.hero_paragraph {
+header section .hero_section .hero_paragraph {
   font-size: 18px;
   line-height: 30px;
   color: #FFFFFF;
   margin-bottom: 36px;
 }
 
-.hero_btn {
+header section .hero_section .hero_btn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
 
-.hero_btn .btn button {
+header section .hero_section .hero_btn .btn button {
   display: flex;
   justify-content: center;
   gap: 5px;
 }
 
-.hero_btn .btn1 button {
+header section .hero_section .hero_btn .btn1 button {
   padding: 14px 18px;
   border: 1px solid #ffffff;
   border-radius: 8px;
@@ -167,12 +177,14 @@ span {
   color: #ffffff;
 }
 
-.hero_btn .btn1 button:hover {
+header section .hero_section .hero_btn .btn1 button:hover {
   color: red;
   cursor: pointer;
 }
 
-.notes_card {
+
+/* Main Section er Notes Card style */
+main .notes_card {
   width: 100%;
   height: 504px;
   /* background-color: aqua; */
@@ -180,7 +192,13 @@ span {
   overflow: hidden;
 }
 
-.cards {
+main .notes_card .notes_header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+main .notes_card .cards {
   position: absolute;
   width: 1530px;
   display: flex;
@@ -191,7 +209,7 @@ span {
   transform: translateX(-46%);
 }
 
-.card {
+main .notes_card .cards .card {
   /* border: 1px solid red; */
   text-align: center;
   padding: 40px 15px;
@@ -200,12 +218,8 @@ span {
   border-radius: 8px 8px 0 0;
 }
 
-.notes_header {
-  text-align: center;
-  margin-bottom: 50px;
-}
 
-.notes_header h1 {
+main .notes_card  .notes_header h1 {
   color: #001931;
   font-size: 55px;
   font-weight: bold;
@@ -213,19 +227,19 @@ span {
   margin-top: 50px;
 }
 
-.notes_header p {
+main .notes_card  .notes_header p {
   color: #627382;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-.img_box {
+main .notes_card .cards .card .img_box {
   width: 100px;
   height: 100px;
   margin: 0 auto;
 }
 
-.card img {
+main .notes_card .cards .card .img_box img {
   background-color: #F95555;
   width: 70px;
   height: 70px;
@@ -236,19 +250,21 @@ span {
   margin-bottom: 20px;
 }
 
-.card h1 {
+main .notes_card .cards .card h1 {
   font-size: 30px;
   font-weight: 600;
   color: #001931;
   margin-bottom: 18px;
 }
 
-.card p {
+main .notes_card .cards .card p {
   font-size: 18px;
   color: #627382;
 }
 
-.brain_section {
+
+/* Main Section er Brain Section style */
+main .brain_section {
   width: 100%;
   height: 870px;
   /* border: 1px solid red; */
@@ -257,7 +273,7 @@ span {
   background-color: #FFFFFF;
 }
 
-.brain {
+main .brain_section .brain {
   /* border: 1px solid red; */
   display: flex;
   align-items: center;
@@ -265,37 +281,38 @@ span {
   width: 1450px;
 }
 
-.left_section_img {
+main .brain_section .brain .left_section_img {
   display: block;
 }
 
-.left_section_img img {
+main .brain_section .brain .left_section_img img {
   width: 625px;
   height: 625px;
 }
 
-.right_section h4 {
+main .brain_section .brain .right_section h4 {
   color: #30B868;
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 18px;
 }
 
-.right_section h1 {
+main .brain_section .brain .right_section h1 {
   color: #000000ce;
   font-size: 55px;
   margin-bottom: 18px;
   font-weight: bold;
 }
 
-.right_section p {
+main .brain_section .brain .right_section p {
   font-size: 19px;
   font-weight: 300;
+  line-height: 25px;
   color: #627382;
   margin-bottom: 35px;
 }
 
-.right_section ul li {
+main .brain_section .brain .right_section ul li {
   list-style: none;
   display: flex;
   align-items: center;
@@ -303,35 +320,39 @@ span {
   margin-top: 16px;
 }
 
-.challenge_section {
+
+/* Main Section er Challenge Section style */
+main .challenge_section {
   /* background-color: #F7F6F2; */
   width: 100%;
   height: 570px;
 }
 
-.challenge {
+main .challenge_section .challenge {
   width: 1450px;
   height: 432px;
   background-color: #F7F6F2;
   margin: 0 auto;
   padding: 85px 45px;
   text-align: center;
+  border-radius: 15px;
 }
 
-.challenge h1 {
+main .challenge_section .challenge h1 {
   font-size: 45px;
   color: #001931;
   margin-bottom: 18px;
   font-weight: bold;
 }
 
-.challenge p {
+main .challenge_section .challenge p {
   font-size: 18px;
+  line-height: 28px;
   color: #627382;
   margin-bottom: 28px;
 }
 
-.one button {
+main .challenge_section .challenge .one button {
   /* margin-bottom: 18px; */
   display: flex;
   justify-content: center;
@@ -341,6 +362,8 @@ span {
   margin: 0 auto 18px;
 }
 
+
+/* Footer Section er Style  */
 footer {
   width: 100%;
   height: 391px;
@@ -351,47 +374,53 @@ footer {
   align-items: center;
 }
 
-.footer_navbar {
+footer .footer_navbar {
   width: 1450px;
   /* background-color: aqua; */
   margin: 50px;
   margin-bottom: 90px;
 }
 
-.footer_navbar nav {
+footer .footer_navbar nav {
   display: flex;
   justify-content: space-between;
 }
 
-.social_links p {
+footer .footer_navbar .social_links p {
   font-size: 24px;
   color: #ffffff;
   margin-bottom: 18px;
 }
 
-.social_links .link_logo {
+footer .footer_navbar .social_links .link_logo {
   display: flex;
   gap: 20px;
 }
 
-.social_links .link_logo a {
- background-color: #ffffff;
- width: 25px;
- height: 25px;
- border: none;
- border-radius: 50%;
- padding: 2px;
+footer .footer_navbar .social_links .link_logo a {
+  background-color: #ffffff;
+  width: 25px;
+  height: 25px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px;
 }
 
-.footer_paragraph{
+footer .footer_navbar .social_links .link_logo a:hover{
+  background-color: transparent;
+  border:1px solid #dddddd;
+  color: white;
+}
+
+footer .footer_paragraph {
   width: 1450px;
   padding: 10px;
   text-align: center;
   border-top: 1px solid #dddddd;
 }
 
-.footer_paragraph p{
- font-size: 18px;
- color: #fafafa;
- margin-top: 25px;
+footer .footer_paragraph p {
+  font-size: 18px;
+  color: #fafafa;
+  margin-top: 25px;
 }
