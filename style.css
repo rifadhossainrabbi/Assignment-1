@@ -6,12 +6,13 @@
 
 body {
   font-family: "Inter", sans-serif;
-  width: 100vw;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Common style */
 
-.btn button{
+.btn button {
   padding: 14px 18px;
   background-color: #469165;
   border: 1px solid transparent;
@@ -20,21 +21,28 @@ body {
   font-size: 18px;
 }
 
-.btn button:hover{
+.btn button:hover {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.482);
   cursor: pointer;
   color: red;
 }
 
+.btn1 button i{
+  /* color: rgba(255, 255, 255, 0.329); */
+  background-color: transparent;
+  border: none;
+}
 
 
-/* Header and Hero section style */
+
+/* Heade o Navbar style */
 header {
-  width: 100vw;
-  background-color: rgb(20, 196, 212);
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  /* background-color: rgb(20, 196, 212); */
+  /* display: flex;
+  justify-content: center; */
+  
   padding: 18px 0;
 }
 
@@ -45,6 +53,8 @@ header nav {
   align-items: center;
   width: 85%;
   max-width: 1530px;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
 }
 
 nav ul {
@@ -64,7 +74,105 @@ nav ul li a {
   font-weight: 300;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   text-decoration: underline;
   color: blue;
 }
+
+
+/* Hero section style */
+section{
+  max-width: inherit;
+  height: 90%;
+  /* max-width: 1800px; */
+  background-image: url('./assets/hero-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 128px 135px 200px 135px;
+}
+
+.hero_section{
+  /* border: 1px solid red; */
+  max-width: 1530px;
+  text-align: center;
+}
+
+.top_header button {
+ /* border: 1px solid red; */
+  /* margin: 0 auto; */
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  padding: 16px 24px;
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #3dd97e;
+  font-size: 18px;
+  
+}
+
+.top_header button i {
+  background-color: #30b86935;
+  border: 0;
+  border-radius: 50%;
+  color: #FFFFFF;
+}
+
+.hero_header{
+  /* border: 1px solid red; */
+  color: #ffffff ;
+  margin-bottom: 30px;
+  line-height: 80px;
+  margin: 0 auto;
+}
+
+.hero_header h1{
+  display: inline-block;
+  font-size: 80px;
+  font-weight: 900;
+  /* text-wrap: wrap; */
+}
+
+span{
+  display: block;
+  color: #30B868;
+}
+
+.hero_paragraph{
+  font-size: 18px ;
+  line-height: 30px;
+  color:#FFFFFF;
+  margin-bottom: 36px;
+}
+
+.hero_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero_btn .btn button{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.hero_btn .btn1 button{
+padding: 14px 18px;
+border: 1px solid #ffffff;
+border-radius: 8px;
+font-size: 18px;
+background-color: transparent;
+color: #ffffff;
+}
+
+.hero_btn .btn1 button:hover{
+   color: red;
+   cursor: pointer;
+}
+
