@@ -39,10 +39,6 @@ body {
 /* Heade o Navbar style */
 header {
   width: 100%;
-  /* background-color: rgb(20, 196, 212); */
-  /* display: flex;
-  justify-content: center; */
-
   padding: 18px 0;
 }
 
@@ -82,7 +78,7 @@ nav ul li a:hover {
 
 /* Hero section style */
 section {
-  max-width: inherit;
+  max-width: 100%;
   height: 90%;
   /* max-width: 1800px; */
   background-image: url('./assets/hero-bg.png');
@@ -221,7 +217,6 @@ span {
   color: #627382;
   font-size: 18px;
   margin-bottom: 10px;
-  /* font-weight: 100; */
 }
 
 .img_box {
@@ -258,21 +253,16 @@ span {
   height: 870px;
   /* border: 1px solid red; */
   display: flex;
-  /* justify-content: center;
-    align-items: center; */
   padding: 140px;
-  /* margin-top: -70px; */
   background-color: #FFFFFF;
 }
 
 .brain {
   /* border: 1px solid red; */
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   gap: 90px;
   width: 1450px;
-  /* padding: 8px; */
 }
 
 .left_section_img {
@@ -287,7 +277,7 @@ span {
 .right_section h4{
   color: #30B868;
   font-size: 18px;
-  font-weight: 300px;
+  font-weight: 300;
   margin-bottom: 18px;
 }
 
