@@ -28,7 +28,7 @@ body {
   color: red;
 }
 
-.btn1 button i{
+.btn1 button i {
   /* color: rgba(255, 255, 255, 0.329); */
   background-color: transparent;
   border: none;
@@ -42,7 +42,7 @@ header {
   /* background-color: rgb(20, 196, 212); */
   /* display: flex;
   justify-content: center; */
-  
+
   padding: 18px 0;
 }
 
@@ -81,7 +81,7 @@ nav ul li a:hover {
 
 
 /* Hero section style */
-section{
+section {
   max-width: inherit;
   height: 90%;
   /* max-width: 1800px; */
@@ -95,14 +95,14 @@ section{
   padding: 128px 135px 200px 135px;
 }
 
-.hero_section{
+.hero_section {
   /* border: 1px solid red; */
   max-width: 1530px;
   text-align: center;
 }
 
 .top_header button {
- /* border: 1px solid red; */
+  /* border: 1px solid red; */
   /* margin: 0 auto; */
   background-color: #ffffff;
   border: 1px solid transparent;
@@ -112,7 +112,7 @@ section{
   margin-bottom: 24px;
   color: #3dd97e;
   font-size: 18px;
-  
+
 }
 
 .top_header button i {
@@ -122,57 +122,130 @@ section{
   color: #FFFFFF;
 }
 
-.hero_header{
+.hero_header {
   /* border: 1px solid red; */
-  color: #ffffff ;
+  color: #ffffff;
   margin-bottom: 30px;
   line-height: 80px;
   margin: 0 auto;
 }
 
-.hero_header h1{
+.hero_header h1 {
   display: inline-block;
   font-size: 80px;
   font-weight: 900;
   /* text-wrap: wrap; */
 }
 
-span{
+span {
   display: block;
   color: #30B868;
 }
 
-.hero_paragraph{
-  font-size: 18px ;
+.hero_paragraph {
+  font-size: 18px;
   line-height: 30px;
-  color:#FFFFFF;
+  color: #FFFFFF;
   margin-bottom: 36px;
 }
 
-.hero_btn{
+.hero_btn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
 
-.hero_btn .btn button{
+.hero_btn .btn button {
   display: flex;
   justify-content: center;
   gap: 5px;
 }
 
-.hero_btn .btn1 button{
-padding: 14px 18px;
-border: 1px solid #ffffff;
-border-radius: 8px;
-font-size: 18px;
-background-color: transparent;
-color: #ffffff;
+.hero_btn .btn1 button {
+  padding: 14px 18px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: transparent;
+  color: #ffffff;
 }
 
-.hero_btn .btn1 button:hover{
-   color: red;
-   cursor: pointer;
+.hero_btn .btn1 button:hover {
+  color: red;
+  cursor: pointer;
 }
 
+.notes_card {
+  width: 100%;
+}
+
+.notes_header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.notes_header h1 {
+  color: #001931;
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  margin-top: 50px;
+}
+
+.notes_header p {
+  color: #627382;
+  font-size: 18px;
+  /* font-weight: 100; */
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  width: 1450px;
+  margin: 0 auto;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  /* border: 1px solid red; */
+  text-align: center;
+  padding: 70px 15px;
+  border-bottom: none;
+  box-shadow:
+    3px -3px 30px #627382;
+  /* 0 0 0 #ffffff00,
+  0 -5px 50px #627382,
+   0 5px 30px #001931; */
+   border-radius: 8px 8px 0 0;
+}
+
+.img_box {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.card img {
+  background-color: #F95555;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.card h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #001931;
+  margin-bottom: 18px;
+}
+
+.card p {
+  font-size: 18px;
+  color: #627382;
+}
